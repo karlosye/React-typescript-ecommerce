@@ -1,7 +1,13 @@
 import React, { ReactNode, useContext, useState } from "react";
+import ShoppingCart from "../components/ShoppingCart";
 
 // declare the type for the shoppingCartContext
 type ShoppingCartContext = {
+  cartItemsQuantity: number;
+  cartItems: CartItem[];
+  openCart: () => void;
+  closeCart: () => void;
+
   getItemQuantity: (id: number) => number;
   increaseItemQuantity: (id: number) => void;
   decreaseItemQuantity: (id: number) => void;
@@ -29,6 +35,15 @@ type CartItem = {
 const ShopingCartContextProvider = (props: shoppingCartPropType) => {
   // the cartItems state is a list of CartItem property
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const openCart = () => {
+    setIsCartOpen(true);
+  };
+
+  const closeCart = () => {
+    setIsCartOpen(false);
+  };
 
   // define the cartItems functions:
   const getItemQuantity = (id: number) => {
@@ -93,9 +108,18 @@ const ShopingCartContextProvider = (props: shoppingCartPropType) => {
     });
   };
 
+  const cartItemsQuantity = cartItems.reduce(
+    (quantity, item) => item.quantity + quantity,
+    0
+  );
+
   return (
     <ShoppingCartContext.Provider
       value={{
+        cartItemsQuantity,
+        cartItems,
+        openCart,
+        closeCart,
         getItemQuantity,
         increaseItemQuantity,
         decreaseItemQuantity,
@@ -103,6 +127,7 @@ const ShopingCartContextProvider = (props: shoppingCartPropType) => {
       }}
     >
       {props.children}
+      <ShoppingCart isOpen={isCartOpen}/>
     </ShoppingCartContext.Provider>
   );
 };
