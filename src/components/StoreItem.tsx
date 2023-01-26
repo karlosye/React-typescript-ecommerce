@@ -1,4 +1,5 @@
 import { Button, Card } from "react-bootstrap";
+import { useCartContext } from "../context/shoppingCartContext";
 
 type storeItemType = {
   id: number;
@@ -8,7 +9,15 @@ type storeItemType = {
 };
 
 const StoreItem = ({ id, name, price, imgUrl }: storeItemType) => {
-  const quantity = 1;
+  // import the custom hook to fetch context:
+  const {
+    getItemQuantity,
+    increaseItemQuantity,
+    decreaseItemQuantity,
+    removeItemFromCart,
+  } = useCartContext();
+
+  const quantity = getItemQuantity(id);
 
   return (
     <Card className="h-100">
@@ -25,17 +34,47 @@ const StoreItem = ({ id, name, price, imgUrl }: storeItemType) => {
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ? (
-            <Button className="w-100"> + Add To Cart</Button>
+            <Button
+              className="w-100"
+              onClick={() => {
+                increaseItemQuantity(id);
+              }}
+            >
+              {" "}
+              + Add To Cart
+            </Button>
           ) : (
             <div className="d-flex flex-column align-items-center">
               <div className="d-flex justify-content-center align-items-center">
-                <Button className="ms-2 me-2">+</Button>
+                <Button
+                  className="ms-2 me-2"
+                  onClick={() => {
+                    increaseItemQuantity(id);
+                  }}
+                >
+                  +
+                </Button>
                 <div>
                   <span className="fs-2">{quantity}</span> in cart
                 </div>
-                <Button className="ms-2 me-2">-</Button>
+                <Button
+                  className="ms-2 me-2"
+                  onClick={() => {
+                    decreaseItemQuantity(id);
+                  }}
+                >
+                  -
+                </Button>
               </div>
-              <Button variant="danger" size="sm">Remove</Button>
+              <Button
+                variant="danger"
+                size="sm"
+                onClick={() => {
+                  removeItemFromCart(id);
+                }}
+              >
+                Remove
+              </Button>
             </div>
           )}
         </div>

@@ -5,17 +5,21 @@ import { Store } from "./pages/Store";
 import { About } from "./pages/About";
 import { MainNavBar } from "./components/Navbar";
 
+import { ShopingCartContextProvider } from "../src/context/shoppingCartContext";
+
 function App() {
   return (
     <>
-      <MainNavBar />
-      <Container className="mb-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/store" element={<Store />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </Container>
+      <ShopingCartContextProvider>
+        <MainNavBar />
+        <Container className="mb-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/store" element={<Store />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </Container>
+      </ShopingCartContextProvider>
     </>
   );
 }
