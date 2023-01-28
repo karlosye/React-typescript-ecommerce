@@ -1,0 +1,67 @@
+.about_section {
+    width: 100%;
+    float: left;
+}
+
+.about_img {
+    margin-top: 100px;
+    width: 100%;
+    float: left;
+}
+
+.about_taital {
+    width: 100%;
+    font-size: 40px;
+    color: #363636;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.border {
+    width: 2px;
+    background-color: #000;
+    height: 80px;
+    margin-left: 13px;
+}
+
+.about_text {
+    width: 70%;
+    font-size: 16px;
+    color: #000;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.read_bt_1 {
+    width: 170px;
+    float: left;
+    margin-top: 50px;
+}
+
+.read_bt_1 a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #363636;
+    padding: 10px 0px;
+}
+
+.read_bt_1 a:hover {
+    color: #ffffff;
+    background-color: #0d6efd;
+}
+
+.image_1 {
+    width: 60%;
+    float: right;
+    position: relative;
+    left: 100px;
+}
+
+.about_description {
+    padding-left: 130px;
+    padding-top: 20px;
+}

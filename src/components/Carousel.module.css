@@ -1,0 +1,11 @@
+.carousel {
+    margin: 20px 30px;
+    width: 100%;
+    transform: translateX(-30px);
+}
+
+.carousel img {
+    margin: auto;
+    width: 100%;
+    height: 85vh;
+}

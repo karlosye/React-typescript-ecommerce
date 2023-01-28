@@ -1,3 +1,13 @@
+import MainCarousel from "../components/Carousel";
+import ItemsShowcase from "../components/ItemsShowcase";
+import StoreIntro from "../components/StoreIntro";
+
 export const Home = () => {
-    return <h1>Home page</h1>
-}
+  return (
+    <>
+      <MainCarousel />
+      <StoreIntro />
+      <ItemsShowcase />
+    </>
+  );
+};
