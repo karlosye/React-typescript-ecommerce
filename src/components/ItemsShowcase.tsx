@@ -30,14 +30,14 @@ const ItemsShowcase = () => {
           <div className="row">
             <div className="col-md-12">
               <h1 className="product_taital">Products</h1>
-              <p className="product_text">Working on the product section</p>
+              <p className="product_text">See a lists of products</p>
             </div>
           </div>
           <div className="product-gallery">
             <div className="row-items">
               {dummy_item_gallery.map((item, index) => {
                 return (
-                  <ProductCard key={item.id} id={item.id} zindex={zindexesArray[index]} clickProductHandler={clickProductHandler}/>
+                  <ProductCard key={item.id} id={item.id} name={item.name} imageUrl={item.imgUrl} zindex={zindexesArray[index]} clickProductHandler={clickProductHandler}/>
                 );
               })}
             </div>

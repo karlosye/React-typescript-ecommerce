@@ -4,10 +4,12 @@ import "./Product-Card.css";
 type ProductCardPropType = {
   id: number;
   zindex: number;
+  name:String,
+  imageUrl: String,
   clickProductHandler: (id:number) => void
 };
 
-const ProductCard = ({ id,zindex,clickProductHandler }: ProductCardPropType) => {
+const ProductCard = ({ id,zindex,name,imageUrl,clickProductHandler }: ProductCardPropType) => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
   const onClickHandler = (id:number) => {
@@ -23,6 +25,8 @@ const ProductCard = ({ id,zindex,clickProductHandler }: ProductCardPropType) => 
     zIndex:zindex
   };
 
+  const imageStyle = { backgroundImage: "url(" + `${imageUrl}` + ")"}
+
   return (
     <div
       className="pic-container"
@@ -31,12 +35,12 @@ const ProductCard = ({ id,zindex,clickProductHandler }: ProductCardPropType) => 
       }}
     >
       <div className="parent">
-        <div className={`wrapper thumb-${id} ${isClicked ? "open" : " "}`} style={wrapperStyle}>
+        <div className={`wrapper ${isClicked ? "open" : " "}`} style={wrapperStyle}>
           <div className="content">
-            <div className="img"></div>
+            <div className="img" style={imageStyle}></div>
             <div className="text">
-              <div className="line title"></div>
-              <div className="line subtitle"></div>
+              <div className="line title">{name}</div>
+              <div className="line subtitle">Check out our {name}</div>
             </div>
           </div>
         </div>
