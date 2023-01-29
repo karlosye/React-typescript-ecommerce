@@ -13,27 +13,7 @@ const ItemsShowcase = () => {
               <p className="product_text">Working on the product section</p>
             </div>
           </div>
-          <div className="product-gallery">
-            <div className="row">
-              {dummy_item_gallery.map((item) => {
-                return (
-                  <div className="pic-container" key={item.id}>
-                    <div className="parent">
-                      <div className={`wrapper thumb-${item.id}`}>
-                        <div className="content">
-                          <div className="img">dsfd</div>
-                          <div className="text">
-                            <div className="line title"></div>
-                            <div className="line subtitle"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          
         </div>
       </div>
     </>
