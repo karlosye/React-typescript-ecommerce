@@ -2,31 +2,31 @@
     {
         "id": 1,
         "name": "Cell Phones",
-        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWe8CyyzR88x6gAL397tz92HJU7DYU4bu0sQEoj_Me&s"
+        "imgUrl": "https://cdn.pixabay.com/photo/2014/08/05/10/30/iphone-410324_960_720.jpg"
     },
     {
         "id": 2,
         "name": "Laptop",
-        "imgUrl": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVza3RvcCUyMGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+        "imgUrl": "https://cdn.pixabay.com/photo/2016/11/29/08/41/apple-1868496_960_720.jpg"
     },
     {
         "id": 3,
         "name": "PC Accessories",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/2324px-Banana-Single.jpg"
+        "imgUrl": "https://cdn.pixabay.com/photo/2015/01/08/18/12/accessories-593298_960_720.jpg"
     },
     {
         "id": 4,
         "name": "Headphones",
-        "imgUrl": "https://mms-images.out.customink.com/mms/images/catalog/styles/125000/catalog_detail_image_medium.jpg?digest=1673536894"
+        "imgUrl": "https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_960_720.jpg"
     },
     {
         "id": 5,
         "name": "Gaming Console",
-        "imgUrl": "https://mms-images.out.customink.com/mms/images/catalog/styles/125000/catalog_detail_image_medium.jpg?digest=1673536894"
+        "imgUrl": "https://cdn.pixabay.com/photo/2017/03/18/16/23/nintendo-switch-2154437_960_720.jpg"
     },
     {
         "id": 6,
         "name": "Built Desktop",
-        "imgUrl": "https://mms-images.out.customink.com/mms/images/catalog/styles/125000/catalog_detail_image_medium.jpg?digest=1673536894"
+        "imgUrl": "https://cdn.pixabay.com/photo/2021/12/30/12/09/gaming-computer-6903836_960_720.jpg"
     }
 ]
