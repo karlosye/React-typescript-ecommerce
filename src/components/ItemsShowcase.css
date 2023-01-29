@@ -32,7 +32,6 @@
 
 .product-gallery {
     position: absolute;
-    /* transform: translateX(100%); */
     left:50%;
     transform: translateX(-50%);
     width: 327px;

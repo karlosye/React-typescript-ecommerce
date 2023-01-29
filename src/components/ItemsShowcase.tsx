@@ -14,7 +14,7 @@ const ItemsShowcase = () => {
             </div>
           </div>
           <div className="product-gallery">
-            <div className="row">
+            <div className="row-items">
               {dummy_item_gallery.map((item) => {
                 return (
                   <div className="pic-container" key={item.id}>
