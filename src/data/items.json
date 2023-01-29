@@ -13,13 +13,13 @@
     },
     {
         "id": 3,
-        "name": "Banana",
+        "name": "iPhone 100",
         "price": 1.05,
         "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/2324px-Banana-Single.jpg"
     },
     {
         "id": 4,
-        "name": "Shirts",
+        "name": "Samsung S200",
         "price": 10.99,
         "imgUrl": "https://mms-images.out.customink.com/mms/images/catalog/styles/125000/catalog_detail_image_medium.jpg?digest=1673536894"
     }
