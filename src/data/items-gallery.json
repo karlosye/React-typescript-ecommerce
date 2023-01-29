@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Cell Phones",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWe8CyyzR88x6gAL397tz92HJU7DYU4bu0sQEoj_Me&s"
+    },
+    {
+        "id": 2,
+        "name": "Laptop",
+        "imgUrl": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVza3RvcCUyMGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {
+        "id": 3,
+        "name": "PC Accessories",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/2324px-Banana-Single.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Headphones",
+        "imgUrl": "https://mms-images.out.customink.com/mms/images/catalog/styles/125000/catalog_detail_image_medium.jpg?digest=1673536894"
+    },
+    {
+        "id": 5,
+        "name": "Gaming Console",
+        "imgUrl": "https://mms-images.out.customink.com/mms/images/catalog/styles/125000/catalog_detail_image_medium.jpg?digest=1673536894"
+    },
+    {
+        "id": 6,
+        "name": "Built Desktop",
+        "imgUrl": "https://mms-images.out.customink.com/mms/images/catalog/styles/125000/catalog_detail_image_medium.jpg?digest=1673536894"
+    }
+]
