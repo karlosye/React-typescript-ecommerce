@@ -9,7 +9,8 @@ export const MainNavBar = () => {
   return (
     <Navbar className="bg-white shadow-sm mb-3">
       <Container>
-        <Nav className="me-auto">
+        <Navbar.Brand>Ye's Electronic Store</Navbar.Brand>
+        <Nav className="ms-auto">
           <Nav.Link to="/" as={NavLink}>
             Home
           </Nav.Link>
