@@ -1,0 +1,23 @@
+.about-page {
+    margin-bottom: 3.5rem;;
+}
+
+.about-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.store-image img {
+    height: 18rem;
+}
+
+.store-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.store-text {
+    padding-left:1.5rem;
+}
