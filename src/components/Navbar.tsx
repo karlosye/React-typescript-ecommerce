@@ -9,7 +9,7 @@ export const MainNavBar = () => {
   return (
     <Navbar className="bg-white shadow-sm mb-3">
       <Container>
-        <Navbar.Brand>Ye's Electronic Store</Navbar.Brand>
+        <Navbar.Brand>Ecommerceocity</Navbar.Brand>
         <Nav className="ms-auto">
           <Nav.Link to="/" as={NavLink}>
             Home

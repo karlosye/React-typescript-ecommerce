@@ -1,10 +1,25 @@
 import { Col, Row } from "react-bootstrap";
 import storeItems from "../data/items.json";
 import StoreItem from "../components/StoreItem";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const Store = () => {
   window.scrollTo(0, 0);
+
+  const [dbstoreItems, setStoreItems] = useState([]);
+
+  // Fetch store items from MongoDB at initial load
+  useEffect(() => {
+    const fetchStoreItems = async () => {
+      const response = await fetch("http://localhost:8080/admin");
+      const fetchedItems = await response.json();
+    };
+    try {
+      fetchStoreItems();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
 
   return (
     <>

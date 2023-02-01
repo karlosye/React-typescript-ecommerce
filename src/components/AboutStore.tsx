@@ -10,7 +10,7 @@ const AboutStore = () => {
         </div>
         <div className={styles["store-text"]}>
             <h2>Find the best electronics deal</h2>
-            <p>Ye's electornic store is a well-known electornic merchandise
+            <p>Ecommerceocity electornic store is a well-known electornic merchandise
                 that has been operating in the Ontario region for more than 10
                 years. With excellent product quality and good customer service,
                 Ye's electronic store is dedicated to bring high quality goods
