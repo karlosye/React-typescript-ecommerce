@@ -37,6 +37,8 @@ Here's a list of features included in this project
 - Modern Minimalistic UI using React-Bootstrap
 - Add to shopping cart & manage shopping cart functionality
 - Context API for global state management
+- Resfful API to connect front-end with back-end
+- MongoDB configured with Mongoese package for data modeling
 
 ## 🙏 Deploy to Netlify
 
