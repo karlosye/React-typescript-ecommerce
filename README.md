@@ -1,6 +1,6 @@
 ﻿# React TypeScript E-commerce web app
 
-- keywords: HTML, React-Bootstrap, TypeScript, React v18, React Context, Router 
+- keywords: React-Bootstrap, TypeScript, React v18, React Context, Router, Node.js, Express.js, MongoDB
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -37,6 +37,8 @@ Here's a list of features included in this project
 - Modern Minimalistic UI using React-Bootstrap
 - Add to shopping cart & manage shopping cart functionality
 - Context API for global state management
+- Restful API to connect front-end with back-end
+- MongoDB configure with Mongoose package for data modeling
 
 ## 🙏 Deploy to Netlify
 
