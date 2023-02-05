@@ -27,6 +27,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/admin", adminRoutes);
+app.use("/", shopRoutes);
 
 mongoose.set("strictQuery", true);
 mongoose
